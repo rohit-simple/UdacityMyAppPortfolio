@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    //used this method as other methods were giving getWidth() as 0
+    //got to know about this method at http://stackoverflow.com/questions/3591784/getwidth-and-getheight-of-view-returns-0
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
