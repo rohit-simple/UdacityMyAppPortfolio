@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="64dp"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="@color/light_blue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_nanodegree_apps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/textsize_xl"
+        android:textColor="@color/blue_grey"
+        android:id="@+id/textview_my_nanodegree_apps"/>
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/spotify_streamer"
+        android:layout_below="@id/textview_my_nanodegree_apps"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button_spotify_streamer"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:minEms="16"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/scores_app"
+        android:layout_below="@id/button_spotify_streamer"
+        android:layout_centerHorizontal="true"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:id="@+id/button_scores_app"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/library_app"
+        android:layout_below="@id/button_scores_app"
+        android:layout_centerHorizontal="true"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:id="@+id/button_library_app"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/build_it_bigger"
+        android:layout_below="@id/button_library_app"
+        android:layout_centerHorizontal="true"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:id="@+id/button_build_it_bigger"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/xyz_reader"
+        android:layout_below="@id/button_build_it_bigger"
+        android:layout_centerHorizontal="true"
+        android:background="@color/pink"
+        android:textColor="@color/white"
+        android:id="@+id/button_xyz_reader"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/capstone_my_own_app"
+        android:layout_below="@id/button_xyz_reader"
+        android:layout_centerHorizontal="true"
+        android:background="@color/teal"
+        android:textColor="@color/white"
+        android:id="@+id/button_capstone_my_own_app"/>
+
+</RelativeLayout>
