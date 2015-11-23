@@ -26,7 +26,7 @@
         android:id="@+id/button_spotify_streamer"
         android:background="@color/pink"
         android:textColor="@color/white"
-        android:minEms="16"/>
+        android:onClick="buttonSpotifyStreamerClicked"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -37,7 +37,8 @@
         android:layout_centerHorizontal="true"
         android:background="@color/pink"
         android:textColor="@color/white"
-        android:id="@+id/button_scores_app"/>
+        android:id="@+id/button_scores_app"
+        android:onClick="buttonScoresAppClicked"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -48,7 +49,8 @@
         android:layout_centerHorizontal="true"
         android:background="@color/pink"
         android:textColor="@color/white"
-        android:id="@+id/button_library_app"/>
+        android:id="@+id/button_library_app"
+        android:onClick="buttonLibraryAppClicked"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -59,7 +61,8 @@
         android:layout_centerHorizontal="true"
         android:background="@color/pink"
         android:textColor="@color/white"
-        android:id="@+id/button_build_it_bigger"/>
+        android:id="@+id/button_build_it_bigger"
+        android:onClick="buttonBuildItBiggerClicked" />
 
     <Button
         android:layout_width="wrap_content"
@@ -70,7 +73,8 @@
         android:layout_centerHorizontal="true"
         android:background="@color/pink"
         android:textColor="@color/white"
-        android:id="@+id/button_xyz_reader"/>
+        android:id="@+id/button_xyz_reader"
+        android:onClick="buttonXyzReaderClicked"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -81,6 +85,7 @@
         android:layout_centerHorizontal="true"
         android:background="@color/teal"
         android:textColor="@color/white"
-        android:id="@+id/button_capstone_my_own_app"/>
+        android:id="@+id/button_capstone_my_own_app"
+        android:onClick="buttonCapstoneMyOwnAppClicked"/>
 
 </RelativeLayout>

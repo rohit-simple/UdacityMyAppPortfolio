@@ -2,20 +2,21 @@ package com.app.rohit.myappportfolio;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends AppCompatActivity {
     private Button button_spotifyStreamer, button_scoresApp, button_libraryApp, button_buildItBigger, button_xyzReader, button_capstoneMyOwnApp;
     private boolean sizeDecided;
+    String start;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        start = "This button will launch my ";
 
         //alloting Button variables to their respective UI elements
         button_spotifyStreamer = (Button) this.findViewById(R.id.button_spotify_streamer);
@@ -24,13 +25,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         button_buildItBigger = (Button) this.findViewById(R.id.button_build_it_bigger);
         button_xyzReader = (Button) this.findViewById(R.id.button_xyz_reader);
         button_capstoneMyOwnApp = (Button) this.findViewById(R.id.button_capstone_my_own_app);
-
-        button_spotifyStreamer.setOnClickListener(this);
-        button_scoresApp.setOnClickListener(this);
-        button_libraryApp.setOnClickListener(this);
-        button_buildItBigger.setOnClickListener(this);
-        button_xyzReader.setOnClickListener(this);
-        button_capstoneMyOwnApp.setOnClickListener(this);
 
         sizeDecided = false;
 
@@ -78,29 +72,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return resultButton;
     }
 
-    @Override
-    public void onClick(View view) {
-        String start = "This button will launch my ";
-        switch (view.getId()) {
-            case R.id.button_spotify_streamer:
-                Toast.makeText(this, start + " Spotify Streamer app!", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button_library_app:
-                Toast.makeText(this, start + " Library app!", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button_scores_app:
-                Toast.makeText(this, start + " Scores app!", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button_xyz_reader:
-                Toast.makeText(this, start + " Xyz Reader app!", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button_build_it_bigger:
-                Toast.makeText(this, start + " Build It Bigger app!", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.button_capstone_my_own_app:
-                Toast.makeText(this, start + " Capstone app!", Toast.LENGTH_SHORT).show();
-                break;
-        }
+    public void buttonSpotifyStreamerClicked(View view){
+        Toast.makeText(this, start + " Spotify Streamer app!", Toast.LENGTH_SHORT).show();
     }
-    
+
+    public void buttonScoresAppClicked(View view){
+        Toast.makeText(this, start + " Scores app!", Toast.LENGTH_SHORT).show();
+    }
+
+    public void buttonLibraryAppClicked(View view){
+        Toast.makeText(this, start + " Library app!", Toast.LENGTH_SHORT).show();
+    }
+
+    public void buttonBuildItBiggerClicked(View view){
+        Toast.makeText(this, start + " Build It Bigger app!", Toast.LENGTH_SHORT).show();
+    }
+
+    public void buttonXyzReaderClicked(View view){
+        Toast.makeText(this, start + " Xyz Reader app!", Toast.LENGTH_SHORT).show();
+    }
+
+    public void buttonCapstoneMyOwnAppClicked(View view){
+        Toast.makeText(this, start + " Capstone app!", Toast.LENGTH_SHORT).show();
+    }
+
 }
